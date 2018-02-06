@@ -14,7 +14,7 @@
         "weex"
     ],
     "author": "",
-    "license": "MIT",
+    "license": "Apache License 2.0",
     "dependencies": {
         "fs-extra": "^4.0.1",
         "vue": "^2.4.3",
