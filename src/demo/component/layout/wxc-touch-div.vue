@@ -10,11 +10,12 @@
 </template>
 
 <script>
+    import {WxcTouchDiv} from '../../../framework/component/index'
+
     export default {
-        name: "wxc-touch-div",
 
         components: {
-            "wxc-touch-div": require("../../../framework/component/layout/wxc-touch-div.vue")
+            "wxc-touch-div": WxcTouchDiv
         },
 
         methods: {
