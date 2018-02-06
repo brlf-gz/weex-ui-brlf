@@ -1,11 +1,11 @@
 <template>
     <div>
-        <wxc-progress percent=33
+        <wxc-progress percent=60
                       bar-width=600
                       bar-height=40
                       bg-color="#ebebeb"
                       active-color="#0eadff"
-                      text-color="#da000f"
+                      text-color="#000000"
                       show-info="true"
         >
         </wxc-progress>

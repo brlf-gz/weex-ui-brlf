@@ -39,9 +39,10 @@
                 }
             },
             progressStyle(){
-                const {percent,barHeight, activeColor} = this;
+                const {percent,barWidth,barHeight, activeColor} = this;
+                const width = ((percent >= 0 && percent <= 100 ? percent : 0) / 100) * barWidth;
                 return {
-                    width: (percent >= 0 && percent <= 100 ? percent : 0) + '%',
+                    width: width + 'px',
                     height: barHeight + 'px',
                     backgroundColor: activeColor
                 }
