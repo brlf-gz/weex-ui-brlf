@@ -1,11 +1,11 @@
 <template>
-  
+
 </template>
 
 <script>
-  export default {
-    name:"wxc-icon"
-  }
+    export default {
+        name: "wxc-icon"
+    }
 </script>
 
 <style scoped>

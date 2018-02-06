@@ -10,23 +10,23 @@
 </template>
 
 <script>
-  export default {
-    name:"wxc-touch-div",
+    export default {
+        name: "wxc-touch-div",
 
-      components:{
-        "wxc-touch-div" : require("../../../framework/component/layout/wxc-touch-div.vue")
-      },
+        components: {
+            "wxc-touch-div": require("../../../framework/component/layout/wxc-touch-div.vue")
+        },
 
-      methods:{
-          onClick(e){
-              console.log("click me")
-          }
-      }
-  }
+        methods: {
+            onClick(e) {
+                console.log("click me")
+            }
+        }
+    }
 </script>
 
 <style scoped>
-    .cTouchDiv{
+    .cTouchDiv {
         width: 200px;
         height: 200px;
         margin-left: 100px;
@@ -36,7 +36,7 @@
         justify-content: center;
     }
 
-    .cText{
+    .cText {
         align-self: center;
     }
 
