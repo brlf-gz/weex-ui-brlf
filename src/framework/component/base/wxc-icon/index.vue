@@ -18,7 +18,7 @@
 
         created (){
             domModule.addRule('fontFace',{
-                'fontFamily':'iconfont',   //注意这里必须是驼峰命名，跟上面的css样式对照
+                'fontFamily':'iconfont',
                 'src':"url('//at.alicdn.com/t/font_565340_rp6941lhitvp9zfr.ttf')"
             })
         },
