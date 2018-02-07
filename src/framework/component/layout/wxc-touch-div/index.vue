@@ -2,6 +2,7 @@
     <div :style="{backgroundColor:bcolor}"
          @touchstart="onTouchstart"
          @touchend="onTouchend"
+         @click="onClick"
          @touchcancel="onTouchend">
         <slot></slot>
     </div>
@@ -13,7 +14,6 @@
         props: {
             color: {default: "white"},
             touchColor: {default: "#ffff00"},
-            index: 0
         },
 
         data: function () {
@@ -29,12 +29,9 @@
         },
 
         methods: {
-            //onClick : function(e){
-            //    var param ={
-            //        index:this.index
-            //    }
-            //    this.$emit("onClick",param);
-            //},
+            onClick : function(e){
+               this.$emit("onClick");
+            },
 
             onTouchstart: function (e) {
                 this.bcolor = this.touchColor;
