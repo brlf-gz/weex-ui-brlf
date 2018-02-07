@@ -29,12 +29,13 @@
 </template>
 
 <script>
+    import {WxcRow} from '../../../../framework/component/index'
     var modal = weex.requireModule('modal')
     export default {
         name: "wxc-row",
 
         components: {
-            "wxc-row": require("../../../../framework/component/layout/wxc-row/index.vue")
+            "wxc-row": WxcRow
         },
 
         methods: {

@@ -51,12 +51,14 @@
 </template>
 
 <script>
+    import {WxcTouchDiv} from '../../../../framework/component/index'
+
     var modal = weex.requireModule('modal')
     export default {
         name: "wxc-touch-div",
 
         components: {
-            "wxc-touch-div": require("../../../../framework/component/layout/wxc-touch-div/index.vue")
+            "wxc-touch-div": WxcTouchDiv
         },
 
         methods: {
