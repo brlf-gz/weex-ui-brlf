@@ -23,7 +23,9 @@
         },
 
         data() {
+            return {
 
+            }
         },
 
         computed: {
