@@ -130,6 +130,7 @@
     .cImg{
         width: 60px;
         height: 60px;
+
         background-color: red;
     }
 
