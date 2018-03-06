@@ -1,15 +1,15 @@
 <template>
     <div class="root">
-        <wxc-progress class="progress"
-                      :percent=percent
-                      :bar-width=barWidth
-                      :bar-height=barHeight
-                      :bg-color=bgColor
-                      :active-color=activeColor
-                      :text-color=textColor
-                      :show-info=showInfo
+        <index class="progress"
+               :percent=percent
+               :bar-width=barWidth
+               :bar-height=barHeight
+               :bg-color=bgColor
+               :active-color=activeColor
+               :text-color=textColor
+               :show-info=showInfo
         >
-        </wxc-progress>
+        </index>
         <div class="divider"></div>
         <div class="attr-div">
             <text class="attr-text">进度百分比%</text>
@@ -38,7 +38,7 @@
         <div class="divider"></div>
         <div class="attr-div">
             <text class="attr-text">文字颜色</text>
-            <input class="attr-input" placeholder="textColor" @change="onChangeTextColor"/>
+            <input class="attr-input" placeholder="text-color" @change="onChangeTextColor"/>
         </div>
         <div class="divider"></div>
         <div class="attr-div">
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-    import {WxcProgress} from '../../../framework/component/index'
+    import {WxcProgress} from '../../../../framework/component/index'
 
     export default {
 
