@@ -21,10 +21,12 @@
   const dom = weex.requireModule('dom')
 
   export default  {
-    data: {
-      eventCnt: 0,
-      hint:"",
-      rows: []
+    data() {
+        return{
+            eventCnt: 0,
+            hint:"",
+            rows: []
+        }
     },
     created () {
       for (let i = 0; i < 30; i++) {
