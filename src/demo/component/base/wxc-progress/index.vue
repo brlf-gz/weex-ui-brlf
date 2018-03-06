@@ -1,6 +1,6 @@
 <template>
     <div class="root">
-        <index class="progress"
+        <wxc-progress class="progress"
                :percent=percent
                :bar-width=barWidth
                :bar-height=barHeight
@@ -9,7 +9,7 @@
                :text-color=textColor
                :show-info=showInfo
         >
-        </index>
+        </wxc-progress>
         <div class="divider"></div>
         <div class="attr-div">
             <text class="attr-text">进度百分比%</text>
