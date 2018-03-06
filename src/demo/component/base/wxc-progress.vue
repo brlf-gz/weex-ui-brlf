@@ -38,7 +38,7 @@
         <div class="divider"></div>
         <div class="attr-div">
             <text class="attr-text">文字颜色</text>
-            <input class="attr-input" placeholder="percent" @change="onChangeTextColor"/>
+            <input class="attr-input" placeholder="textColor" @change="onChangeTextColor"/>
         </div>
         <div class="divider"></div>
         <div class="attr-div">
