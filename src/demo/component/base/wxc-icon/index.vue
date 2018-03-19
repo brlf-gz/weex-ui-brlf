@@ -27,7 +27,7 @@
         data(){
             return{
                 isSelectShow:true,
-                name:"refresh",
+                name:"order",
                 nameItem:[
                     {name:"refresh",text:"刷新"},
                     {name:"like",text:"猜你喜欢"},

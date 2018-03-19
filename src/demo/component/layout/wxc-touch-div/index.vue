@@ -3,7 +3,7 @@
         <div>
             <text>设置点击效果</text>
             <wxc-touch-div class="cTouchDiv"
-                   color="#ff0000"                    
+                   color="#ff0000"
                    touch-color="#ff8800">
                 <text class="cText">Click Me</text>
             </wxc-touch-div>
@@ -25,7 +25,7 @@
                    color="#ff0000"
                    @onClick="onClick('two-first')"
                    touch-color="#ff8800">
-                <div class="cTouchDiv-div" 
+                <div class="cTouchDiv-div"
                     @click="onClick('two-second')">
                     <text>second</text>
                 </div>
@@ -38,7 +38,7 @@
                    color="#ff0000"
                    @onClick="onClick('third-first')"
                    touch-color="#ff8800">
-                <div class="cTouchDiv-div" 
+                <div class="cTouchDiv-div"
                     @touchstart="onTouchstart"
                     @touchend="onTouchend"
                     @touchcancel="onTouchend"
