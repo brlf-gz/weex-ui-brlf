@@ -1,7 +1,7 @@
 <template>
     <div>
-        <wxc-scroller>
-            <text v-for="i in 100">{{i}}</text>
+        <wxc-scroller :loadmore="onloadmore">
+            <text v-for="item in list">{{item}}</text>
         </wxc-scroller>
     </div>
 </template>
@@ -13,7 +13,18 @@
 
         data() {
             return {
+                list:[],
             }
+        },
+
+        created(){
+            this.list = new Array(51)
+                .join(0)
+                .split('')
+                .map((item, index) => {
+                return index;
+            });
+
         },
 
         components: {
@@ -21,7 +32,11 @@
         },
 
         methods: {
-
+            onloadmore(){
+                for (let i = 0; i < 5; i++){
+                    this.list.push(this.list.length)
+                }
+            }
         }
     }
 </script>
