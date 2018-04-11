@@ -5,7 +5,7 @@
         <wxc-row class="cRow">
             <text class="cText">wxc-row-center</text>
         </wxc-row>
-        <wxc-row class="cRow" 
+        <wxc-row class="cRow"
             is-touch='true'
             layout="left">
             <text class="cText">wxc-row-left,touch effect</text>

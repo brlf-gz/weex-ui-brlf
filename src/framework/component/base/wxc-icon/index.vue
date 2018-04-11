@@ -1,19 +1,36 @@
 <template>
-    <text class="cIcon" :style="{fontSize:fontSize}" v-html="Icon[name]"></text>
+    <div>
+        <text class="cIcon" :style="{fontSize:fontSize,color:color}">{{Icon[name]}}</text>
+    </div>
 </template>
 
 <script>
+    var he = require('he');
     import Icon from "./iconName.js"
     var domModule = weex.requireModule("dom");
     export default {
         props:{
-            name:{default:"homepageSelect"},//传入Icon名，Icon参考iconName.js
+            name:
+                {
+                    default:"order",
+                    type:String
+                },//传入Icon名，Icon参考iconName.js
             fontSize:{default:"80px"},
+            color:{default:"#da000f"},
         },
         name: "wxc-icon",
         data: () => ({
             Icon
         }),
+
+
+        computed: {
+            // getFontName: function() {
+            //     return he.decode(this.name)
+            // }
+        },
+
+
 
 
         created (){
@@ -29,8 +46,13 @@
 </script>
 
 <style scoped>
+
     .cIcon{
         font-family:iconfont
     }
 
 </style>
+
+
+
+
