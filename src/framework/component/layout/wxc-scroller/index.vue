@@ -1,8 +1,9 @@
 <template>
-    <scroller style="flex: 1;">
+    <scroller ref="scroller">
         <slot></slot>
-        <loading class="footer" @loading="loadmore" :display="true ? 'display' : 'hide'"></loading>
+        <loading class="footer" @loading="loadmore"></loading>
     </scroller>
+
 </template>
 
 <script>
@@ -14,16 +15,6 @@
             loadmore:Function,
         },
 
-        data() {
-            return {
-                displayBool: 'show'
-            }
-        },
-
-        computed: {
-
-        },
-
         method:{
         },
     }
@@ -32,7 +23,5 @@
 <style scoped>
     .footer{
         height: 1px;
-        justify-content: center;
-        align-items: center;
     }
 </style>
