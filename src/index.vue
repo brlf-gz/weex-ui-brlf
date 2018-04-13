@@ -1,10 +1,36 @@
 <template>
-    <div class="wrapper" @click="update">
-        <image :src="logoUrl" class="logo"></image>
-        <text class="title">Hello {{target}}</text>
-        <text class="desc">Now, let's use vue to build your weex app.</text>
+    <div>
+        <wxc-scroller :loadmore="onloadmore">
+            <text v-for="item in list">{{item}}</text>
+        </wxc-scroller>
     </div>
 </template>
+
+<script>
+    import WxcScroller from "./framework/component/layout/wxc-scroller/index.vue";
+
+    export default {
+        components: {WxcScroller},
+        data: () => ({
+            list:[],
+        }),
+        created(){
+            this.list = new Array(51)
+                .join(0)
+                .split('')
+                .map((item, index) => {
+                    return index;
+                });
+        },
+        methods: {
+            onloadmore(){
+                for (let i = 0; i < 20; i++){
+                    this.list.push(this.list.length)
+                }
+            }
+        }
+    }
+</script>
 
 <style>
     .wrapper {
@@ -29,18 +55,3 @@
         font-size: 24px;
     }
 </style>
-
-<script>
-    export default {
-        data: {
-            logoUrl: 'http://img1.vued.vanthink.cn/vued08aa73a9ab65dcbd360ec54659ada97c.png',
-            target: 'World'
-        },
-        methods: {
-            update: function (e) {
-                this.target = 'Weex'
-                console.log('target:', this.target)
-            }
-        }
-    }
-</script>

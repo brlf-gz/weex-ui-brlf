@@ -33,7 +33,12 @@
 
         methods: {
             onloadmore(){
-                for (let i = 0; i < 5; i++){
+                const modal = weex.requireModule('modal')
+                modal.toast({
+                    message:'loadmore',
+                    duration:1
+                });
+                for (let i = 0; i < 20; i++){
                     this.list.push(this.list.length)
                 }
             }
