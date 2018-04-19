@@ -1,3 +1,19 @@
+# wxc-row
+## 控件说明
+封装`<div/>`的flex-direction: row
+
+## 属性
+无
+
+## 方法
+无
+
+## 事件
+无
+
+## 用法：
+
+```vue
 <template>
     <div>
        <wxc-row>
@@ -26,6 +42,13 @@
         components: {
             'wxc-row': WxcRow,
         },
-
+        
     }
 </script>
+
+```
+
+## 注意事项：
+无
+
+
