@@ -1,6 +1,6 @@
-# wxc-col
+# wxc-row
 ## 控件说明
-封装`<div/>`的flex-direction: column
+封装`<div/>`的flex-direction: row
 
 ## 属性
 无
@@ -16,31 +16,31 @@
 ```vue
 <template>
     <div>
-       <wxc-col>
+       <wxc-row>
            <text>1</text>
            <text>2</text>
            <text>3</text>
-       </wxc-col>
-        <wxc-col>
+       </wxc-row>
+        <wxc-row>
             <text>1</text>
             <text>2</text>
             <text>3</text>
-        </wxc-col>
-        <wxc-col>
+        </wxc-row>
+        <wxc-row>
             <text>1</text>
             <text>2</text>
             <text>3</text>
-        </wxc-col>
+        </wxc-row>
     </div>
 </template>
 
 <script>
-    import {WxcCol} from '../../../../framework/component/index'
+    import {WxcRow} from '../../../../packages/component/index'
 
     export default {
 
         components: {
-            'wxc-col': WxcCol,
+            'wxc-row': WxcRow,
         },
         
     }

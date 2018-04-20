@@ -2,7 +2,7 @@
     <div>
         <text class="cTextTitle">选择下拉框里的值更改图标</text>
         <div class="cIconCenterDiv">
-            <icon-text class="cIconText" :fontSize="200" :name="name"></icon-text>
+            <wxc-icon class="cIconText" :fontSize="200" :name="name"></wxc-icon>
             <div class="cSelectDiv">
                 <text class="cSelectText">{{name}}</text>
                 <image class="cImg" @click="onClickSelectImg"></image>
@@ -22,6 +22,8 @@
 
 
 <script>
+
+    import {WxcIcon} from "../../packages/index";
 
     export  default {
         data(){
@@ -65,7 +67,7 @@
 
 
         components:{
-            "icon-text":require("../../../../framework/component/base/wxc-icon/index.vue"),
+            WxcIcon
         },
 
         methods:{

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import {WxcCol} from '../../../../framework/component/index'
+    import {WxcCol} from '../../packages/index'
 
     export default {
 

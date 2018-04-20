@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import {WxcRow} from '../../../../framework/component/index'
+    import {WxcRow} from '../../packages/index'
 
     export default {
 

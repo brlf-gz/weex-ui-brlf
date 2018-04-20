@@ -6,6 +6,7 @@
     "scripts": {
         "start": "npm run serve",
         "build": "webpack",
+        "buildw": "webpack --watch",
         "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
         "dev": "webpack --config webpack.config.js --watch -d",
         "serve": "webpack-dev-server --config webpack.dev.js --watch --open",

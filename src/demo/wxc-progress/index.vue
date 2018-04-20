@@ -50,7 +50,7 @@
 </template>
 
 <script>
-    import {WxcProgress} from '../../../../framework/component/index'
+    import {WxcProgress} from '../../packages/index'
 
     export default {
 

@@ -51,7 +51,7 @@
 </template>
 
 <script>
-    import {WxcTouchDiv} from '../../../../framework/component/index'
+    import {WxcTouchDiv} from '../../packages/index'
 
     var modal = weex.requireModule('modal')
     export default {

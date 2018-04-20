@@ -9,7 +9,7 @@
 </template>
 
 <script>
-    import {WxcList} from '../../../../framework/component/index'
+    import {WxcList} from '../../packages/index'
 
     export default {
 
