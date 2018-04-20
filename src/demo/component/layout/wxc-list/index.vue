@@ -1,13 +1,15 @@
 <template>
     <div>
-        <wxc-scroller :loadmore="onloadmore">
-            <text v-for="item in list">{{item}}</text>
-        </wxc-scroller>
+        <wxc-list :loadmore="onloadmore">
+            <cell v-for="item in list">
+                <text>{{item}}</text>
+            </cell>
+        </wxc-list>
     </div>
 </template>
 
 <script>
-    import {WxcScroller} from '../../../../framework/component/index'
+    import {WxcList} from '../../../../framework/component/index'
 
     export default {
 
@@ -28,7 +30,7 @@
         },
 
         components: {
-            "wxc-scroller": WxcScroller,
+            "wxc-list": WxcList,
         },
 
         methods: {

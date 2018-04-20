@@ -1,7 +1,12 @@
 <template>
-    <list>
-        <slot></slot>
-        <loading class="footer" @loading="loadmore" :display="true ? 'display' : 'hide'"></loading>
+    <scroller v-if="isWeb">
+        <slot/>
+        <loading class="footer"
+                 @loading="loadmore"></loading>
+    </scroller>
+    <list v-else
+          @loadmore="loadmore">
+        <slot/>
     </list>
 </template>
 
@@ -16,12 +21,14 @@
 
         data() {
             return {
-                displayBool: 'show'
+
             }
         },
 
         computed: {
-
+            isWeb(){
+               return weex.config.env.platform.toLowerCase() === 'web';
+            }
         },
 
         method:{
