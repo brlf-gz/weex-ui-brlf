@@ -1,6 +1,8 @@
 <template>
     <div>
-        <wxc-list :loadmore="onloadmore">
+        <wxc-list :loadmore="onloadmore"
+                  :refresh="onrefresh"
+                  :refreshDisplay="refreshDisplay">
             <cell v-for="item in list">
                 <text>{{item}}</text>
             </cell>
@@ -9,31 +11,40 @@
 </template>
 
 <script>
-    import {WxcList} from '../../packages/index'
+
+    import {WxcList} from "../../packages/index";
 
     export default {
-
-        data() {
-            return {
-                list:[],
-            }
+        components: {
+            WxcList
         },
-
+        data: () => ({
+            list:[],
+            refreshDisplay: false,
+        }),
         created(){
             this.list = new Array(51)
                 .join(0)
                 .split('')
                 .map((item, index) => {
-                return index;
-            });
-
+                    return index;
+                });
         },
-
-        components: {
-            "wxc-list": WxcList,
-        },
-
         methods: {
+            onrefresh(){
+                this.refreshDisplay = true;
+                setTimeout(() => {
+                    this.list = [];
+                    this.list = new Array(11)
+                        .join(0)
+                        .split('')
+                        .map((item, index) => {
+                            return index;
+                        });
+                    this.refreshDisplay = false
+                }, 2000);
+
+            },
             onloadmore(){
                 for (let i = 0; i < 20; i++){
                     this.list.push(this.list.length)
@@ -43,6 +54,6 @@
     }
 </script>
 
-<style scoped>
+<style>
 
 </style>
