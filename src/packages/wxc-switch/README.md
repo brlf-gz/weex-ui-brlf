@@ -22,7 +22,6 @@
 
 ## 用法：
 参考[示例](https://github.com/brlf-gz/weex-ui-brlf/blob/master/src/demo/wxc-switch/index.vue).
-```
 
 ## 注意事项：
 无
