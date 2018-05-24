@@ -22,18 +22,7 @@
 
 
 ## 用法：
-
-```vue
-<wxc-progress class="progress"
-                      :percent=percent
-                      :bar-width=barWidth
-                      :bar-height=barHeight
-                      :bg-color=bgColor
-                      :active-color=activeColor
-                      :text-color=textColor
-                      :show-info=showInfo>
-</wxc-progress>
-```
+参考[示例](https://github.com/brlf-gz/weex-ui-brlf/blob/master/src/demo/wxc-progress/index.vue).
 
 ## 注意事项：
 无

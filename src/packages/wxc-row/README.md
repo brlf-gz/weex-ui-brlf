@@ -12,41 +12,7 @@
 无
 
 ## 用法：
-
-```vue
-<template>
-    <div>
-       <wxc-row>
-           <text>1</text>
-           <text>2</text>
-           <text>3</text>
-       </wxc-row>
-        <wxc-row>
-            <text>1</text>
-            <text>2</text>
-            <text>3</text>
-        </wxc-row>
-        <wxc-row>
-            <text>1</text>
-            <text>2</text>
-            <text>3</text>
-        </wxc-row>
-    </div>
-</template>
-
-<script>
-    import {WxcRow} from '../../../../packages/component/index'
-
-    export default {
-
-        components: {
-            'wxc-row': WxcRow,
-        },
-        
-    }
-</script>
-
-```
+参考[示例](https://github.com/brlf-gz/weex-ui-brlf/blob/master/src/demo/wxc-row/index.vue).
 
 ## 注意事项：
 无

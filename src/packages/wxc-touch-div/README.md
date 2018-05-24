@@ -17,15 +17,7 @@
 
 
 ## 用法：
-
-```vue
-<wxc-touch-div class="cTouchDiv"
-        color="#ff0000"
-        @onClick="onClick('one')"
-        touch-color="#ff8800">
-    <text class="cText">Click Me</text>
-</wxc-touch-div>
-```
+参考[示例](https://github.com/brlf-gz/weex-ui-brlf/blob/master/src/demo/wxc-touch-div/index.vue).
 
 ## 注意事项：
 无

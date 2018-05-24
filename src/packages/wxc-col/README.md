@@ -12,41 +12,7 @@
 无
 
 ## 用法：
-
-```vue
-<template>
-    <div>
-       <wxc-col>
-           <text>1</text>
-           <text>2</text>
-           <text>3</text>
-       </wxc-col>
-        <wxc-col>
-            <text>1</text>
-            <text>2</text>
-            <text>3</text>
-        </wxc-col>
-        <wxc-col>
-            <text>1</text>
-            <text>2</text>
-            <text>3</text>
-        </wxc-col>
-    </div>
-</template>
-
-<script>
-    import {WxcCol} from '../../../../packages/component/index'
-
-    export default {
-
-        components: {
-            'wxc-col': WxcCol,
-        },
-        
-    }
-</script>
-
-```
+参考[示例](https://github.com/brlf-gz/weex-ui-brlf/blob/master/src/demo/wxc-col/index.vue).
 
 ## 注意事项：
 无

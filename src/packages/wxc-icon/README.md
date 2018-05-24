@@ -21,14 +21,7 @@ icon封装
 
 
 ##用法
-
-```vue
-<wxc-icon 
-    class="cIconText" 
-    :fontSize="200" 
-    :name="name">
-</wxc-icon>
-```
+参考[示例](https://github.com/brlf-gz/weex-ui-brlf/blob/master/src/demo/wxc-icon/index.vue).
 
 ## 注意事项：
 无
